@@ -2,10 +2,10 @@
 
 macro for gimp to save image with numbered suffix
 
-When saving an image file the script appends a token at the end the filename
+When saving an image file the script appends a suffix at the end of the filename
 with the form '_gp_nn', with nn as a number {'01' .. '99'}.
-If this token already exists, NN is incremented.
-If there is no such token, '_gp_01' is appended.
+If this suffix already exists, nn is incremented.
+If there is no such suffix, '_gp_01' is appended.
 
 image.jpg       -> image_gp_01.jpg or
 image_gp_32.jpg -> image_gp_33.jpg
