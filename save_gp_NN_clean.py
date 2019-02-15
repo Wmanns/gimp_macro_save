@@ -11,16 +11,16 @@
 # You may use and distribute this plug-in under the terms of the GPL v2
 # or, at your option, any later GPL version.
 #
+# When saving an image file the script appends a suffix at the end the filename
+# with the form '_gp_NN', with NN as a number {'01' .. '99'}.
+# If this suffix already exists, NN is incremented.
+# If there is no such suffix, '_gp_01' is appended.
+#
+# The script by itself does not check if it is overwriting an existing file.
+#
 # C:\Program Files\GIMP 2.9\lib\gimp\2.0\plug-ins
 # or
 # ..\PortableApps\GIMPPortable\App\gimp\lib\gimp\2.0\plug-ins
-#
-# When saving an image file the script appends a token at the end the filename
-# with the form '_gp_NN', with NN as a number {'01' .. '99'}.
-# If this token already exists, NN is incremented.
-# If there is no such token, '_gp_01' is appended.
-#
-# The script by itself does not check if it is overwriting an existing file.
 #
 
 from gimpfu import *
